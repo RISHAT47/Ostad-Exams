@@ -1,0 +1,231 @@
+body {
+    display: flex;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #f04e31;
+    height: 300px;
+    position: fixed;
+    padding: 20px;
+    color: white;
+}
+
+.sidebar h1 {
+    font-size: 24px;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    margin: 20px 0;
+}
+
+.sidebar nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.main-content {
+    margin-left: 220px;
+    padding: 45px;
+}
+.showcase h1{
+    font-size: 65px;
+}
+.showcase h2 {
+    font-size: 50px;
+    color: #f04e31;
+}
+
+.showcase span {
+    color: #f04e31;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    width: 48%;
+    margin: 1%;
+}
+
+.services, .designers, .packages, .contact {
+    margin-top: 40px;
+}
+
+.services h2, .designers h2, .packages h2, .contact h2 {
+    font-size: 45px;
+    color:#f04e31;
+}
+.services span, .designers span, .packages span, .contact span {
+    color: #f04e31;
+}
+
+
+
+.designer {
+    text-align: center;
+}
+
+
+#contact-form input, #contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+}
+
+#contact-form button {
+    background-color: #f04e31;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.card {
+    display: inline-block;
+    background: rgb(192, 192, 192);
+    margin: 10px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(32% - 20px);
+    vertical-align: top;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card h3 {
+    margin: 0 0 10px;
+    font-size: 22px;
+    color: #333;
+}
+
+.card .title {
+    margin: 0;
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.card p {
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+}
+
+
+.packages {
+    text-align: left;
+    padding: 20px;
+}
+
+.package-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.package {
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 10px;
+    width: 600px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.package-header1 {
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+}
+.package-header2 {
+    background: #f04e31;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+}
+
+
+.package-body {
+    padding: 20px;
+}
+
+.package-body p {
+    margin: 10px 0;
+    text-align: center;
+    padding: auto;
+}
+
+
+.package-footer {
+    padding: 20px;
+    text-align: center;
+}
+
+.price-control {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.price-control button {
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.price-control button.plus {
+    background: #ff6f61;
+}
+
+.price-control .price {
+    margin: 0 10px;
+    font-size: 24px;
+}
+
+.rooms {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.signup {
+    background: #ff6f61;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.thank-you {
+    margin-top: 10px;
+    color: #333;
+    font-size: 14px;
+}

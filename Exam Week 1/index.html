@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interior Design Showcase</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h1>The Company</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Showcase</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Designers</a></li>
+                <li><a href="#">Packages</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="main-content">
+        <section class="showcase">
+            <h1 >Interior Design</h1>
+            <h2>Showcase.</h2>
+            
+            <div class="gallery">
+                <img src="images/showcase-01.jpg" alt="Image 1">
+                <img src="images/showcase-02.jpg" alt="Image 2">
+                <img src="images/showcase-03.jpg" alt="Image 3">
+                <img src="images/showcase-04.jpg" alt="Image 4">
+                <img src="images/showcase-05.jpg" alt="Image 5">
+                <img src="images/showcase-06.jpg" alt="Image 6">
+            </div>
+        </section>
+
+        <section class="services">
+            <h2>Services.</h2>
+            <p>We are an interior design service that focuses on what’s best for your home and what’s best for you!</p>
+            <p>Some text about our services - what we do and what we offer. We are lorem ipsum consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+        </section>
+
+        <section class="designers">
+            <h2>Designers<span>.</span></h2>
+            <p>The best team in the world.<br><br>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti, dolor fugit beatae quisquam
+             labore natus fugiat eligendi sint iure praesentium cum qui? Illo quibusdam sapiente officiis sunt labore expedita incidunt dignissimos culpa temporibus deleniti eveniet, quia eos autem dicta quisquam necessitatibus natus dolore porro, voluptatum repudiandae. Voluptates doloremque pariatur libero neque laudantium reprehenderit, sunt molestiae ad autem? A voluptatibus necessitatibus deserunt adipisci illum nam cupiditate dicta, aut nesciunt officia? Ipsum quisquam cumque sapiente velit, omnis ut est laboriosam! Perferendis veritatis in nulla, assumenda minus necessitatibus illo adipisci voluptates numquam possimus atque deserunt consequuntur ipsum vitae magni similique voluptas qui exercitationem debitis placeat sit reprehenderit temporibus soluta culpa! Provident nisi commodi non quibusdam distinctio velit, saepe ducimus adipisci eius natus iure architecto optio temporibus ut laudantium tempora, odit inventore. Labore quas accusamus sunt magnam officia
+             omnis voluptatum velit minima explicabo dolore, ipsum voluptatibus! Repellendus esse quidem sit ipsam iusto nam laudantium<br><br>
+            <strong>Our Designers are thoughtfully chosen:</strong></p>
+             <div class="card">
+                <img src="images/person-01.jpg"  alt="John Doe">
+                <div class="card-content">
+                    <h3>John Doe</h3>
+                    <p class="title">CEO & Founder</p>
+                    <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/person-02.jpg"  alt="Jane Doe">
+                <div class="card-content">
+                    <h3>Jane Doe</h3>
+                    <p class="title">Designer</p>
+                    <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/person-03.jpg"  alt="Mike Ross">
+                <div class="card-content">
+                    <h3>Mike Ross</h3>
+                    <p class="title">Architect</p>
+                    <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="packages">
+            <h2>Packages<span>.</span></h2>
+            <p>Some text about our prices. Lorem ipsum consectetur adipisicing elit, sed do ei
+                usmod Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste omnis totam alias eius beatae eaque maxime repellendus, facere repellat reprehenderit ea mollitia illo quo doloribus necessitatibus odio ad, perspiciatis dolor voluptatem ut asperiores! Veritatis architecto expedita vel culpa libero, aperiam necessitatibus veniam sed iusto ipsa nesciunt minus amet. Dolor, quod!</p>
+            <div class="packages">
+                <div class="package-container">
+                    <div class="package basic">
+                        <div class="package-header1">Basic</div>
+                        <div class="package-body">
+                            <p>Floorplanning</p>
+                            <hr>
+                            <p>10 hours support</p>
+                            <hr>
+                            <p>Photography</p>
+                            <hr>
+                            <p>20% furniture discount</p>
+                            <hr>
+                            <p>Good deals</p>
+                        </div>
+                        <div class="package-footer">
+                            <div class="price-control">
+                                <button class="minus" onclick="updateRoomCount('basic', -1)">-</button>
+                                <span class="price" id="basic-price">$199</span>
+                                <button class="plus" onclick="updateRoomCount('basic', 1)">+</button>
+                            </div>
+                            <p class="rooms" id="basic-rooms">1 room</p>
+                            <button class="signup" onclick="signUp('basic')">Sign Up</button>
+                            <p class="thank-you" id="basic-thank-you"></p>
+                        </div>
+                    </div>
+                    <div class="package pro">
+                        <div class="package-header2">Pro</div>
+                        <div class="package-body">
+                            <p>Floorplanning</p>
+                            <hr>
+                            <p>50 hours support</p>
+                            <hr>
+                            <p>Photography</p>
+                            <hr>
+                            <p>50% furniture discount</p>
+                            <hr>
+                            <p>GREAT deals</p>
+                        </div>
+                        <div class="package-footer">
+                            <div class="price-control">
+                                <button class="minus" onclick="updateRoomCount('pro', -1)">-</button>
+                                <span class="price" id="pro-price">$249</span>
+                                <button class="plus" onclick="updateRoomCount('pro', 1)">+</button>
+                            </div>
+                            <p class="rooms" id="pro-rooms">1 room</p>
+                            <button class="signup" onclick="signUp('pro')">Sign Up</button>
+                            <p class="thank-you" id="pro-thank-you"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact">
+            <h2>Contact<span>.</span></h2>
+            <p>Do you want us to style your home? Fill out the form and fill me in with the details :) We love meeting new people!</p>
+            <form id="contact-form">
+                <input type="text" name="name" placeholder="Name">
+                <input type="email" name="email" placeholder="Email">
+                <textarea name="message" placeholder="Message"></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
